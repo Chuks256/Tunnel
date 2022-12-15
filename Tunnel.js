@@ -10,6 +10,6 @@ const Tunnel={
     return tunnel_obj.verify_my_key(mysecret,stored_key,newkey)
     }
 }
-   
-let g=Tunnel.hash_my_key("useMd4",'123456','chmod');
-console.log(g);
+
+//export tunnel module 
+module.exports=Tunnel;
