@@ -3,7 +3,6 @@
 const crypt=require('crypto');
 const os=require("os");
 
-
 const useAlgo={
     useMd4:"md4",
     useSha256:"sha256",
@@ -29,7 +28,6 @@ class tunnel_helper{
         if(os.arch()=="x32" ){
             throw new Error("Platform type must be of x64 or above to enable fast computing")
         }
-
         if(os.version()==system_type.Win_7_ultimate ||os.version()== system_type.Win_7_pro || os.version()== system_type.Win_7){
         throw new Error("system type is not supported must be windows 8 > or above")
         }
@@ -83,4 +81,5 @@ class tunnel_helper{
 
 }
 
+// export core file to tunnel file 
 module.exports=tunnel_helper;
